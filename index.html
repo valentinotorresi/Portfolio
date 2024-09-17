@@ -1,118 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/043fb5635c.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/4a076b6202.js" crossorigin="anonymous"></script>
-    <title>Valentino - Developer</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Styles -->
+    <title>Valentino Torresi - Web Developer & Designer</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/4a076b6202.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="index.html">Valentino Torresi</a></div>
+            <ul class="nav-links">
+                <li><a href="#projects">proyectos</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <section id="face" class="face">
-            <article class="face-name">
-                <h1>Valentino Torresi</h1>
-                <h2>Front-End Developer</h2>
-                <a href="https://github.com/valentinotorresi" class="github"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i> Github</a>
-                <a href="https://www.linkedin.com/in/valentino-torresi/" class="linkedin"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i> LinkedIn</a>
-            </article>
-            <div id="front" class="photo">
-            </div>
-        </section>
-
-        <div class="banner">
-        </div>
-
-        <section id="biography">
-            <aside class="section-title">
-                <h2></h2>
-            </aside>
+        <section class="hero">
             <div class="container">
-                <div class="col">
-                    <img src="img/cv.jpg" alt="" class="profile-picture">
+                <h1>Valentino Torresi</h1>
+                <p>Desarrollador Front End con una sólida formación en aplicaciones y tecnologias web, actualmente estudiando y formandome dentro del mundo del desarrollo de software</p>
+                <div>
+                    <a href="#projects" class="btn" style="border: 2px solid var(--accent-color);">Proyectos</a>
+                    <a href="#contact" class="btn btn-outline">Contacto</a>
                 </div>
-                <div class="col">
-                    <h2>Acerca de mi</h2>
-                    <p>Soy desarrollador front end con una sólida formación en aplicaciones y tecnologias web, obtenida en el instituto "Educación IT". </p>
-                    <p>Mi trayectoria en el mundo del desarrollo web ha sido profundamente enriquecida por esta educación integral, que me ha proporcionado no solo una base técnica robusta, sino también una comprensión profunda de las mejores prácticas en el diseño y desarrollo de interfaces.</p>
-                    <p>Mi pasión por el desarrollo de interfaces de usuario ha sido el motor que impulsa mi carrera profesional. Esta pasión me ha llevado a especializarme en la creación de experiencias digitales que no solo sean visualmente atractivas, sino también funcionales y altamente responsivas.</p>
-                    <div id="button-container">
-                        <button id="btnDownloadCv"><i class="fa-solid fa-download" style="color: #131313;"></i> Descargar CV</button>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="/img/proyecto landing page.jpg"alt="landing Page">
+                        <div class="project-overlay">
+                            <a href="https://valentinotorresi.github.io/Proyecto-Landing-Page/" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/website.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="index.html" class="btn">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="banner">
-        </div>
-
-        <section id="iDo">
-            <aside class="section-title">
-                <h2>Mis habilidades</h2>
-            </aside>
-            <article class="card-container">
-                <div class="card">
-                    <img src="img/icons8-html-100.png" alt="HTML5" title="HTML5" class="skill-picture">
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img style="height:300; width: 300;" src="img/cv.webp" alt="Valentino Torresi">
+                    </div>
+                    <div class="about-text">
+                        <h2>Acerca de mi</h2>
+                        <div class="about-paragraph">
+                            <p>Desarrollador Front-End con experiencia en la creación de interfaces de usuario intuitivas y atractivas.</p>
+                            <p>Capaz de transformar conceptos de diseño en experiencias web dinámicas y accesibles, con un sólido enfoque en la usabilidad y la optimización del rendimiento.</p>
+                            <p>Experto en tecnologías web modernas como HTML5, CSS3 y JavaScript, así como en frameworks y bibliotecas como React y entornos de desarrollo como NodeJS</p>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="#" id="btnDownloadCv" class="btn">Descargar CV</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/icons8-javascript-100.png" alt="JS" title="JavaScript" class="skill-picture">
-                </div>
-                <div class="card">
-                    <img src="img/icons8-css-100.png" alt="css" title="CSS" class="skill-picture">
-                </div>
-                <div class="card">
-                    <img src="img/icons8-oreja-100.png" alt="BootStrap5" title="BootStrap5" class="skill-picture">
-                </div>
-                <div class="card">
-                    <img src="img/icons8-hablar-con-descaro-a-100.png" alt="Sass" title="Sass" class="skill-picture" >
-                </div>
-                <div class="card">
-                    <img src="img/icons8-mysql-100.png" alt="Mysql" title="Mysql" class="skill-picture" >
-                </div>
-            </article>
+            </div>
         </section>
 
-        <div class="banner">
-            <a href="#proyects" class="banner-link">Proyectos</a>
-        </div>
-
-        <section id="projects">
-            <article>
-                <h2>Mis Proyectos</h2>
-                <article class="card-project">
-                    <img src="img/proyecto landing page.jpg" alt="project">
-                    <div class="article-preview">
-                        <h3>Educación IT</h3>
-                        <p>
-                            Proyecto de Landing Page responsive para "Educación IT" desarrollado con HTML y CSS
-                            <a href="https://valentinotorresi.github.io/Proyecto-Landing-Page/">Visitar pagina</a>
-                        </p>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-html5" style="color:#e34c26;"></i></div>
+                        <h3>HTML5</h3>
                     </div>
-                </article>
-            </article>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-css3" style="color: #2965f1;"></i></div>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-square-js" style="color: #f0db4f;"></i></div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-bootstrap" style="color:#563d7c;"></i></div>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-react" style="color:#61dbfb;"></i></div>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-node-js" style="color:#6cc24a;"></i></div>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-git-alt" style="color: #f1502f;"></i></div>
+                        <h3>Git</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contactame</h2>
+                <p>Siempre estoy abierto a nuevas oportunidades y colaboraciones. ¡No dudes en comunicarte!</p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer">
-            <div class="row">
-            <a href="https://www.linkedin.com/in/valentino-torresi/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/valentinotorresi"><i class="fa-brands fa-github"></i></a>
+        <div class="container">
+            <p>&copy; Valentino Torresi</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <div>
-                <div class="row">
-                Copyright © Valentino Torresi - 2024
-                </div>
-            </div>
+        </div>
     </footer>
-    <script src="script.js">     
+
+    <script src="script.js">
     </script>
 </body>
-
 </html>
