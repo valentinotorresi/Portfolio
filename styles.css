@@ -362,4 +362,7 @@ footer {
     .nav-links{
         display: none;
     }
+    .hero p {
+        width: auto;
+    }
 }
