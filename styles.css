@@ -20,7 +20,15 @@
     --card-bg: #2d3748;
     --card-shadow: rgba(255, 255, 255, 0.1);
 }
+@keyframes show {
+    from {
+        opacity: 0; scale:50%;
+    }
 
+    to {
+        opacity: 1; scale:100%;
+    }
+}
 
 * {
     margin: 0;
@@ -33,6 +41,13 @@ body {
     color: var(--text-primary);
     background-color: var(--bg-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+section{
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 10% cover 40%;
 }
 .container {
     width: 90%;
@@ -266,9 +281,13 @@ input:checked + .slider:before {
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 2rem;
 }
+.skills-grid:hover > :not(:hover)
+{
+    opacity: 0.5;
+} 
 .skill-card {
     background-color: var(--card-bg);
     border-radius: 10px;
