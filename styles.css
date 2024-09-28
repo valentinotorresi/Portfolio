@@ -182,7 +182,29 @@ input:checked + .slider:before {
     background-color: var(--accent-color);
     color: #fff;
 }
-
+.send-btn{
+ margin: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--accent-color);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--accent-color);
+}
+.send-btn:hover
+{
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--accent-color-hover);
+}
+.send-btn:active{
+    transform: scale(0.9);
+}
 .projects {
     padding: 4rem 0;
 }
