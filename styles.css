@@ -216,7 +216,7 @@ input:checked + .slider:before {
 }
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     gap: 2rem;
 }
 .project-card {
@@ -228,9 +228,10 @@ input:checked + .slider:before {
     transition: transform 0.3s ease;
 }
 .project-text{
+    max-width: 500px;
     font-weight: 600;
     margin-top: 20px;
-
+    font-size: 1.2rem;
 }
 .project-card:hover {
     transform: translateY(-5px);
