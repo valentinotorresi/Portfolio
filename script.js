@@ -21,7 +21,7 @@
 
         toggleSwitch.addEventListener('change', switchTheme, false);
 
-        // Smooth scrolling for navigation links
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -31,15 +31,14 @@
             });
         });
 
-        // Download CV btn
+
         let cvAbierta = false;       
         document.getElementById('btnDownloadCv').addEventListener('click', function() {
             if (!cvAbierta) {
-                cvVentana = window.open('img/Valentino Torresi CV.pdf', '_blank');
+                cvVentana = window.open('img/Valentino-Torresi-CV.pdf', '_blank');
             } 
         });
 
-        // Form submission handling
             const form = document.getElementById('form');
             const result = document.getElementById('result');
             
